@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101116">
+  <meta name="description" content="A little collection of favorite memories for my one and only Babi.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://happybirthdaymybabi.devs.surf/gallery.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Memories | For my one and only Babi&gt;.&lt;">
+  <meta property="og:description" content="A little collection of favorite memories for my one and only Babi.">
+  <meta property="og:url" content="https://happybirthdaymybabi.devs.surf/gallery.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Our Memories | For my one and only Babi&gt;.&lt;">
+  <meta name="twitter:description" content="A little collection of favorite memories for my one and only Babi.">
+  <title>Our Memories | For my one and only Babi&gt;.&lt;</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./gallery.css">
+  <link rel="stylesheet" href="./splash-cursor.css">
+</head>
+<body>
+  <div class="liquid-ether" id="liquidEther" aria-hidden="true">
+    <canvas class="liquid-ether__canvas" id="liquidCanvas"></canvas>
+  </div>
+  <main class="gallery-page">
+    <a class="back-link" href="./index.html"><span aria-hidden="true">&larr;</span> Birthday page</a>
+    <header class="gallery-header">
+      <p class="gallery-kicker">Little moments, big memories</p>
+      <h1>Our Memories</h1>
+      <p class="gallery-intro">A few favorite adventures together. Drag to wander through them.</p>
+    </header>
+
+    <section class="infinite-menu" id="infiniteMenu" aria-label="Memory carousel" tabindex="0">
+      <div class="menu-stage" id="menuStage">
+        <div class="menu-ring" id="menuRing"></div>
+      </div>
+
+      <button class="menu-arrow menu-arrow--previous" id="previousMemory" type="button" aria-label="Previous memory">
+        <span aria-hidden="true">&larr;</span>
+      </button>
+      <button class="menu-arrow menu-arrow--next" id="nextMemory" type="button" aria-label="Next memory">
+        <span aria-hidden="true">&rarr;</span>
+      </button>
+
+      <div class="menu-info" id="menuInfo" aria-live="polite">
+        <p class="menu-count" id="menuCount"></p>
+        <h2 id="memoryTitle"></h2>
+        <p class="menu-description" id="memoryDescription"></p>
+        <button class="view-memory" id="viewMemory" type="button">
+          View this memory <span aria-hidden="true">&nearr;</span>
+        </button>
+      </div>
+    </section>
+
+    <p class="gallery-hint">Drag the photos or use the arrows <span aria-hidden="true">&middot;</span> Press the left/right keys to browse</p>
+  </main>
+
+  <dialog class="memory-dialog" id="memoryDialog" aria-labelledby="dialogCaption">
+    <button class="dialog-close" id="closeDialog" type="button" aria-label="Close photo">&times;</button>
+    <img id="dialogImage" src="" alt="">
+    <p id="dialogCaption"></p>
+  </dialog>
+
+  <script type="module" src="./gallery.js"></script>
+  <script type="module" src="./liquid-ether.js"></script>
+  <script type="module" src="./splash-cursor.js"></script>
+</body>
+</html>

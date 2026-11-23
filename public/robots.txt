@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://happybirthdaymybabi.devs.surf/sitemap.xml
