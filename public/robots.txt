@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nazarocode.github.io/Birthday-Gift/sitemap.xml
+Sitemap: https://happybirthdayMyBabi.devs.surf/sitemap.xml
